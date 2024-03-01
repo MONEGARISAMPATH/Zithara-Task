@@ -5,13 +5,14 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const process = require('process');
 const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
 let sequelize;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  // sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize("postgresql://sampathvarma123:BsfRVu2XiCf9JtRy1wsTQg@zithara-4007.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/zithara-database?sslmode=verify-full")
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
