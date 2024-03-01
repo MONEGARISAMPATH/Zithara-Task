@@ -14,10 +14,16 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
+    "use_env_variable": "postgresql://sampathvarma123:BsfRVu2XiCf9JtRy1wsTQg@zithara-4007.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/zithara-database?sslmode=verify-full",
     "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+
+    "dialect": "postgresql",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false 
+      }
+    },
+    "ssl": true
   }
 }
