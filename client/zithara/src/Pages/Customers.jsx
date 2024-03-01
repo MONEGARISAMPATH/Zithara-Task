@@ -15,7 +15,7 @@ const Customers = () => {
   const getAllCustomers = async () => {
     try {
       const res = await fetch(
-        `http://localhost:3001/customers?page=${pageNumber}&pageSize=${limit}`
+        `https://zithara-task.onrender.com/customers?page=${pageNumber}&pageSize=${limit}`
       );
       const response = await res.json();
       if (res.status === 200) {
@@ -87,7 +87,7 @@ const Customers = () => {
     console.log("searchValue",searchValue)
     try {
       const res = await fetch(
-        `http://localhost:3001/customers/search/${searchValue}`
+        `https://zithara-task.onrender.com/customers/search/${searchValue}`
       );
       const response = await res.json();
       if (res.status === 200) {
