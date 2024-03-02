@@ -135,7 +135,7 @@ const Customers = () => {
                   }}
                   required
                 />
-                <button type="submit">Search</button>
+                <button type="submit">Find</button>
               </form>
             </div>
           </div>
