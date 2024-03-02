@@ -7,8 +7,8 @@ const Customers = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [limit, setLimit] = useState(20);
   const [totalPages, setTotalPages] = useState(1);
-  const [dateOrder, setDateOrder] = useState("asc");
-  const [timeOrder, setTimeOrder] = useState("asc");
+  const [dateOrder, setDateOrder] = useState("dsc");
+  const [timeOrder, setTimeOrder] = useState("dsc");
   const [sort, setSort] = useState("none");
   const [sortedData,setSortedData] = useState([]);
   const [searchValue, setSearchValue] = useState("");
