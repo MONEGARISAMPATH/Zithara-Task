@@ -179,7 +179,7 @@ const Customers = () => {
             </td>
           </th>
           <tbody>
-            {sortedData?.map((customer) => {
+            {sortedData?.map((customer,index) => {
               const dateTime = new Date(customer.createdAt);
 
               const date = `${dateTime.getFullYear()}-${(
@@ -203,6 +203,7 @@ const Customers = () => {
 
               return (
                 <tr className="customerRow" key={customer.id}>
+                  <td className="customerColumn">{index}</td>
                   <td className="customerColumn">{customer.id}</td>
                   <td className="customerColumn">{customer.name}</td>
                   <td className="customerColumn">{customer.age}</td>
