@@ -142,6 +142,7 @@ const Customers = () => {
         </div>
         <table>
           <th className="customerRow">
+            <td className="customerColumn">S.No</td>
             <td className="customerColumn">Customer ID</td>
             <td className="customerColumn">Name</td>
             <td className="customerColumn">Age</td>
@@ -203,7 +204,7 @@ const Customers = () => {
 
               return (
                 <tr className="customerRow" key={customer.id}>
-                  <td className="customerColumn">{index}</td>
+                  <td className="customerColumn">{index+1}</td>
                   <td className="customerColumn">{customer.id}</td>
                   <td className="customerColumn">{customer.name}</td>
                   <td className="customerColumn">{customer.age}</td>
