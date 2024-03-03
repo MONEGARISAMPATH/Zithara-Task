@@ -1,5 +1,5 @@
 .customersTable{
-    width: 100%;
+    width: 100vw;
     background-color: rgb(238, 240, 240);
     border: 1px solid black;
     padding-bottom: 10px;
